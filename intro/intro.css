@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    line-height: 1.6;
+    color: #262E5D;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/*container*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Intro */
+.intro {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color:white;
+    color:#262E5D;
+
+}
+.intro__inner {
+    width: 100%;
+    max-width:880px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+.intro__title {
+    font-size: 96px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    line-height: 1;
+    color: #262E5D;
+}
+
+.intro__suptitle {
+    font-size: 24px;
+    padding-top:16px ;
+    color: #76768F;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+.intro__img{
+    display: flex;
+    padding-top: 50px;
+    
+    
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}    
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #262E5D;
+}
+/* Nav */
+.nav {
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+.nav__link {
+    color:  #76768F;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    
+    margin: 0 15px;
+    font-weight:300;
+    
+}
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #262E5D;
+    opacity: 0;
+    
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+
+
+.nav__link:hover {
+    color: #262E5D;
+}
+.nav__link:hover:after,
+.nav__link.active::after{
+    opacity: 1;
+}
+.nav__link.active {
+    color:  #262E5D;
+}
+    
+@media screen and (max-width: 992px) {
+    .header__logo{
+        width: 100%;
+        font-size: 14px;
+    }
+    .nav__link a{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 20%;
+        
+    }
+    .intro__title{
+        font-size: 30px;
+    }
+    .intro__img{
+        width: 20%;
+        height: 20%;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+  @media screen and (max-width: 480px) {
+
+  }
+
+
+
+
+
+
+
